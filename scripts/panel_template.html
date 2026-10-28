@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TAGIR — Личная рабочая панель</title>
+<meta name="description" content="Личная рабочая панель профессиональной деятельности">
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23E2725B' rx='6'/%3E%3Ctext x='16' y='23' font-family='Georgia,serif' font-size='19' font-weight='bold' fill='%23FFFDF9' text-anchor='middle'%3ET%3C/text%3E%3C/svg%3E">
+<!--FONT_LINKS-->
+<!--SEED_DATA-->
+<!--STYLE-->
+</head>
+<body>
+<div id="top-shell" class="top-shell">
+  <div class="top-bar">
+    <div class="brand-cluster" id="brand-cluster" role="button" tabindex="0">
+      <span class="brand-mark"><span class="brand-square"></span> TAGIR</span>
+      <span class="brand-subtitle">Личная рабочая панель</span>
+    </div>
+    <div class="top-controls">
+      <div class="global-search-wrap">
+        <input id="global-search" class="global-search-input" type="search" placeholder="Поиск по панели…">
+        <div id="search-dropdown" class="global-search-dropdown" hidden></div>
+      </div>
+      <button id="btn-export" class="btn btn-sm" type="button">↓ Экспорт</button>
+      <button id="btn-import" class="btn btn-sm" type="button">↑ Импорт</button>
+      <input id="import-file" type="file" accept="application/json,.json" hidden>
+      <span class="storage-pill"><span class="storage-dot"></span><span id="storage-state">локальный браузер</span></span>
+    </div>
+  </div>
+  <nav class="nav-strip" id="nav-strip" aria-label="Основная навигация"></nav>
+</div>
+<main class="workspace" id="workspace"><!--VIEWS--></main>
+<footer class="panel-footer">
+  <span>Личная рабочая панель TAGIR · v1.0</span>
+  <span>Данные в браузере (localStorage) + panel-seed.json</span>
+</footer>
+<div id="modal-backdrop" class="modal-backdrop" hidden></div>
+<div id="save-toast" class="save-toast" hidden>
+  <span id="save-toast-text">Сохранено в браузере</span>
+</div>
+<!--SCRIPT-->
+</body>
+</html>
