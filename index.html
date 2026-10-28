@@ -1187,7 +1187,7 @@ function renderDistinctionStrip(d){
     var v=d[f[0]];
     var text=v&&(typeof v==='string'?v!==''&&v!=='—':Array.isArray(v)?v.length>0:v!==null&&v!==undefined&&v!==false)?formatVal(v):'—';
     var muted=(text==='—');
-    grid.appendChild(h('div',{class:'distinction-cell'},[h('div',{class:'kv-label'},f[1]),h('div',{class:'kv-val'+(muted?' muted':'','style':'font-size:.81rem'},text)]));
+    grid.appendChild(h('div',{class:'distinction-cell'},[h('div',{class:'kv-label'},f[1]),h('div',{class:'kv-val'+(muted?' muted':''),style:'font-size:.81rem'},text)]));
   });
   wrap.appendChild(grid);
   return wrap;
