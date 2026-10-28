@@ -501,7 +501,7 @@ function renderResults(){
   wrap.appendChild(h('div',{class:'section-head'},[
     h('div',{},[h('h2',{class:'section-title'},'Результаты'),h('p',{class:'section-desc'},'Результаты работы и изменения для участников. Непроверенные записи вынесены отдельно и не считаются доказанным результатом.')])
   ]));
-  var cats=['Создано','Продеплоировано','Изменения для участников','Экономически получено'];
+  var cats=['Создано','Продеплоировано','Изменения для участников','Экономически получено','Требует проверки'];
   cats.forEach(function(cat){
     var results=(state.results||[]).filter(function(r){return r.category===cat;});
     if(results.length===0)return;
