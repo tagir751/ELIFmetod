@@ -1,7 +1,7 @@
 (function(){
 'use strict';
 
-var STORAGE_KEY='tagir_panel_v1';
+var STORAGE_KEY='tagir_panel_v2';
 var STORAGE_STATE='локальный браузер';
 
 var SEED=JSON.parse(document.getElementById('panel-seed-data').textContent);
@@ -72,7 +72,7 @@ function projStatusBadge(status){
   return 'badge badge-neutral';
 }
 function resultCatBadge(cat){
-  var m={'Создано':'terracotta','Продеплоизировано':'teal','Изменения для участников':'yellow','Экономически получено':'terracotta'};
+  var m={'Создано':'terracotta','Продеплоизировано':'teal','Изменения для участников':'yellow','Экономически получено':'terracotta','Требует проверки':'neutral'};
   return 'badge badge-'+(m[cat]||'neutral');
 }
 function horizonBadge(name){
@@ -499,7 +499,7 @@ function renderProjectCard(p){
 function renderResults(){
   var wrap=h('div',{});
   wrap.appendChild(h('div',{class:'section-head'},[
-    h('div',{},[h('h2',{class:'section-title'},'Результаты'),h('p',{class:'section-desc'},'4 типа результатов: создано, деплоировано, изменения для участников, экономически получено')])
+    h('div',{},[h('h2',{class:'section-title'},'Результаты'),h('p',{class:'section-desc'},'Результаты работы и изменения для участников. Непроверенные записи вынесены отдельно и не считаются доказанным результатом.')])
   ]));
   var cats=['Создано','Продеплоировано','Изменения для участников','Экономически получено'];
   cats.forEach(function(cat){
@@ -516,7 +516,7 @@ function renderResults(){
 }
 
 function renderResultCard(r){
-  var card=h('div',{class:'card card-'+(r.category==='Экономически получено'?'focus':r.category==='Изменения для участников'?'yellow':'teal')});
+  var card=h('div',{class:'card card-'+(r.category==='Экономически получено'?'focus':r.category==='Изменения для участников'?'yellow':r.category==='Требует проверки'?'neutral':'teal')});
   var header=h('div',{class:'card-header'},[
     h('h3',{class:'card-title'},r.title),
     h('div',{class:'badge-row'},[h('span',{class:resultCatBadge(r.category)},r.category)])
