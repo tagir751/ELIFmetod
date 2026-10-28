@@ -30,9 +30,17 @@ def main():
     html = html.replace('<!--VIEWS-->', '')
     json_escaped = seed.replace('<', '\\u003c').replace('>', '\\u003e').replace('&', '\\u0026')
     html = html.replace('<!--SEED_DATA-->', f'<script id="panel-seed-data" type="application/json">{json_escaped}</script>')
+    # Write to root for local dev and to public/ for Vercel
     with open(OUTPUT, 'w', encoding='utf-8') as f:
         f.write(html)
+    # Also write to public/ for Vercel static output
+    public_dir = os.path.join(ROOT, 'public')
+    os.makedirs(public_dir, exist_ok=True)
+    public_output = os.path.join(public_dir, 'index.html')
+    with open(public_output, 'w', encoding='utf-8') as f:
+        f.write(html)
     print(f'[OK] index.html создан ({len(html.encode("utf-8"))} Bytes)')
+    print(f'  · публичная версия: public/index.html')
     print(f'  · {len(parsed.get("directions", []))} направлений')
     print(f'  · {len(parsed.get("projects", []))} проектов')
     print(f'  · {len(parsed.get("results", []))} результатов')

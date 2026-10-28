@@ -1,6 +1,3 @@
-# Build artifacts
-index.html
-
 # Python
 __pycache__/
 *.py[cod]
