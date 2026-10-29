@@ -1,45 +1,28 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>TAGIR — Личная рабочая панель</title>
-<meta name="description" content="Личная рабочая панель профессиональной деятельности">
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TAGIR — пространство идей и проектов</title>
+<meta name="description" content="Путь от наблюдения к образовательным изменениям: проекты, методология и результаты TAGIR.">
 <meta name="robots" content="noindex, nofollow">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23E2725B' rx='6'/%3E%3Ctext x='16' y='23' font-family='Georgia,serif' font-size='19' font-weight='bold' fill='%23FFFDF9' text-anchor='middle'%3ET%3C/text%3E%3C/svg%3E">
-<!--FONT_LINKS-->
-<!--SEED_DATA-->
-<!--STYLE-->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23E2725B' rx='8'/%3E%3Ctext x='16' y='23' font-family='Georgia,serif' font-size='19' font-weight='bold' fill='%23FFFDF9' text-anchor='middle'%3ET%3C/text%3E%3C/svg%3E">
+<!--SEED_DATA--><style><!--STYLE--></style>
 </head>
 <body>
-<div id="top-shell" class="top-shell">
-  <div class="top-bar">
-    <div class="brand-cluster" id="brand-cluster" role="button" tabindex="0">
-      <span class="brand-mark"><span class="brand-square"></span> TAGIR</span>
-      <span class="brand-subtitle">Личная рабочая панель</span>
-    </div>
-    <div class="top-controls">
-      <div class="global-search-wrap">
-        <input id="global-search" class="global-search-input" type="search" placeholder="Поиск по панели…">
-        <div id="search-dropdown" class="global-search-dropdown" hidden></div>
-      </div>
-      <button id="btn-export" class="btn btn-sm" type="button">↓ Экспорт</button>
-      <button id="btn-import" class="btn btn-sm" type="button">↑ Импорт</button>
-      <input id="import-file" type="file" accept="application/json,.json" hidden>
-      <span class="storage-pill"><span class="storage-dot"></span><span id="storage-state">локальный браузер</span></span>
-    </div>
-  </div>
-  <nav class="nav-strip" id="nav-strip" aria-label="Основная навигация"></nav>
-</div>
-<main class="workspace" id="workspace"><!--VIEWS--></main>
-<footer class="panel-footer">
-  <span>Личная рабочая панель TAGIR · v1.0</span>
-  <span>Данные в браузере (localStorage) + panel-seed.json</span>
-</footer>
-<div id="modal-backdrop" class="modal-backdrop" hidden></div>
-<div id="save-toast" class="save-toast" hidden>
-  <span id="save-toast-text">Сохранено в браузере</span>
-</div>
-<!--SCRIPT-->
-</body>
-</html>
+<header class="site-header"><a class="brand" href="#top" aria-label="TAGIR — начало"><span class="brand-symbol">T</span><span>TAGIR <small>Идеи становятся практикой</small></span></a><nav><a href="#vision">Видение</a><a href="#projects">Проекты</a><a href="#method">Метод</a><a href="#next">Следующий шаг</a></nav><a class="header-cta" href="#projects">Исследовать проекты <span>↗</span></a></header>
+<main id="top">
+<section class="hero section-wrap">
+<div class="hero-copy"><div class="eyebrow"><span class="eyebrow-dot"></span> ЛИЧНЫЙ ПРОЕКТ · В ПРОЦЕССЕ СТАНОВЛЕНИЯ</div><h1>Не просто использовать ИИ.<br><em>Учиться думать глубже.</em></h1><p class="hero-lead">Я создаю образовательные практики и инструменты, которые помогают человеку разобраться в сложной ситуации, увидеть возможности и перейти от идеи к собственному действию.</p><div class="hero-actions"><a class="button button-dark" href="#projects">Посмотреть, что уже создаётся <span>↘</span></a><a class="text-link" href="#vision">Зачем я это делаю <span>→</span></a></div><div class="hero-footnote"><span class="live-dot"></span> Не готовая легенда успеха — работающий путь, который я проверяю на практике.</div></div>
+<div class="hero-art" aria-label="Абстрактная иллюстрация: идеи соединяются в систему"><div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div><div class="art-line line-one"></div><div class="art-line line-two"></div><div class="art-node node-a">вопрос</div><div class="art-node node-b">наблюдение</div><div class="art-node node-c">идея</div><div class="art-node node-d">действие</div><div class="art-core"><span>TAGIR</span><strong>думать<br>и создавать</strong><i>метод × ИИ × человек</i></div><div class="art-sticker">СМЫСЛ<br>→ ПРАКТИКА</div><div class="art-spark spark-a">✳</div><div class="art-spark spark-b">✳</div></div>
+<div class="hero-bottom"><div><span class="hero-index">01</span><span>Сначала понять<br><b>что действительно важно</b></span></div><div><span class="hero-index">02</span><span>Затем попробовать<br><b>в реальной ситуации</b></span></div><div><span class="hero-index">03</span><span>И увидеть изменение<br><b>а не только красивую идею</b></span></div></div>
+</section>
+<section class="manifesto section-wrap" id="vision"><div class="section-kicker">01 / ВИДЕНИЕ</div><div class="manifesto-grid"><h2>Технологии должны<br>возвращать человеку<br><em>время на человека.</em></h2><div class="manifesto-copy"><p>Когда ИИ берёт на себя часть рутины, ценность педагога не исчезает. Напротив — появляется больше пространства для вопросов, совместного исследования, внимания и живого разговора.</p><p>Моя задача — не навязать всем одну «правильную» методику. Я хочу создавать среду, в которой педагоги и ученики могут наблюдать, пробовать, обсуждать и постепенно улучшать собственную практику.</p><div class="manifesto-quote">«X не создаёт правильную педагогику.<br><b>X создаёт среду для эволюции педагогик.</b>»</div></div></div></section>
+<section class="projects-section section-wrap" id="projects"><div class="section-heading"><div><div class="section-kicker">02 / ПРОЕКТЫ В ДВИЖЕНИИ</div><h2>Идеи, которые выходят<br>из головы в мир.</h2></div><p>Каждый проект — отдельный эксперимент. Открой карточку, чтобы увидеть замысел, аргументы, что уже сделано и что ещё предстоит проверить.</p></div><div id="project-grid" class="project-grid"></div><div class="project-hint"><span class="hint-mark">↗</span><span><b>Это не витрина готовых ответов.</b><br>Это карта развития — от первых формулировок до проверяемой практики.</span></div></section>
+<section class="method-section" id="method"><div class="section-wrap method-inner"><div class="method-intro"><div class="section-kicker">03 / КАК Я РАБОТАЮ</div><h2>Не угадывать.<br><em>Исследовать и проверять.</em></h2><p>Мой рабочий цикл начинается не с инструмента, а с реальной ситуации. ИИ помогает думать и собирать материал, но решения и ответственность остаются у людей.</p></div><div class="method-visual"><div class="method-rail"></div><div class="method-step"><span>01</span><div><b>Увидеть ситуацию</b><small>Что происходит на самом деле?</small></div></div><div class="method-step"><span>02</span><div><b>Задать вопрос</b><small>Что мы пока не понимаем?</small></div></div><div class="method-step"><span>03</span><div><b>Сформулировать гипотезу</b><small>Какое изменение может помочь?</small></div></div><div class="method-step"><span>04</span><div><b>Попробовать в деле</b><small>Создать инструмент или провести эксперимент.</small></div></div><div class="method-step"><span>05</span><div><b>Посмотреть, что изменилось</b><small>Сверить ожидания с реальным опытом.</small></div></div><div class="method-loop">↻ И снова — с более точным вопросом</div></div></div></section>
+<section class="proof-section section-wrap" id="proof"><div class="section-kicker">04 / ЧЕСТНАЯ ОПОРА</div><div class="proof-grid"><div><h2>Уже есть<br><em>на что опереться.</em></h2><p>Сегодняшняя работа — не обещание будущего результата. Это материалы, прототипы, разговоры и решения, из которых можно собирать доказательства пользы.</p></div><div class="proof-cards"><article class="proof-card proof-card-coral"><span class="proof-icon">✳</span><h3>Создаю методологии</h3><p>Формулирую подходы к работе с педагогическими ситуациями, проектами и ИИ.</p><span class="proof-tag">АРТЕФАКТЫ И ИДЕИ</span></article><article class="proof-card proof-card-teal"><span class="proof-icon">◌</span><h3>Работаю с живым контекстом</h3><p>Обсуждаю практику с руководителем и педагогами; сопоставляю идеи с реальными задачами.</p><span class="proof-tag">РАЗГОВОРЫ И НАБЛЮДЕНИЯ</span></article><article class="proof-card proof-card-yellow"><span class="proof-icon">↗</span><h3>Собираю инструменты</h3><p>Перевожу замыслы в цифровые прототипы и рабочие сценарии, которые можно проверять.</p><span class="proof-tag">ПРОТОТИПЫ</span></article><article class="proof-card proof-card-plain"><span class="proof-icon">?</span><h3>Проверяю реальную ценность</h3><p>Устойчивые изменения, повторяемость и готовность платить — не объявлены доказанными. Это следующие вопросы работы.</p><span class="proof-tag">ОТКРЫТЫЕ ГИПОТЕЗЫ</span></article></div></div></section>
+<section class="next-section" id="next"><div class="section-wrap next-inner"><div class="next-orb"><span>СЛЕДУЮЩИЙ<br>ШАГ</span><b>↗</b></div><div><div class="section-kicker">05 / БЛИЖАЙШИЙ РУБЕЖ</div><h2>От хорошей идеи —<br>к одному ясному доказательству.</h2><p>В ближайшем цикле я хочу разобрать конкретный эпизод образовательного пилота: что было до разговора, что обсудили, какое решение появилось и что произошло после. Это позволит показать не только замысел, но и реальную динамику.</p><a class="button button-light" href="#projects">Вернуться к проектам <span>↑</span></a></div></div></section>
+</main>
+<footer class="site-footer"><a class="brand footer-brand" href="#top"><span class="brand-symbol">T</span><span>TAGIR <small>Идеи становятся практикой</small></span></a><p>Работа в процессе. Выводы меняются вместе с опытом.</p><span>Портфолио и исследовательская карта · 2026</span></footer>
+<div class="modal-backdrop" id="modal-backdrop" hidden><section class="project-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title"><button class="modal-close" id="modal-close" aria-label="Закрыть окно">×</button><div id="modal-content"></div></section></div>
+<script><!--SCRIPT--></script>
+</body></html>
